@@ -1,0 +1,49 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "role1",
+      "permissions": ["admin"]
+    },
+    {
+      "id": 2,
+      "name": "role2",
+      "permissions": ["manager"]
+    }
+  ],
+  "userData": {
+    "totalUsers": 500,
+    "users": [
+      {
+        "id": 1,
+        "firstName": "first name1",
+        "lastName": "last Name",
+        "title": "a title",
+        "email": "email@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 2,
+        "firstName": "first name2",
+        "lastName": "last Name",
+        "title": "a title",
+        "email": "email@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 3,
+        "firstName": "first name3",
+        "lastName": "last Name",
+        "title": "a title",
+        "email": "email@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      }
+    ]
+  }
+}
