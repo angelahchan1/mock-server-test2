@@ -55,7 +55,7 @@ const resolvers = {
         },
       };
     },
-    getUser: ({ userId }: { userId: number }) => {
+    getUser: (_: any, { userId }: { userId: number }) => {
       const userInfo = usersData.userData.users.find(
         (user) => user.id === userId
       );
@@ -65,21 +65,24 @@ const resolvers = {
     getRoles: () => usersData.roles,
   },
   Mutation: {
-    addUser: ({ userInfo }: { userInfo: User }) => {
+    addUser: (_: any, { userInfo }: { userInfo: User }) => {
       if (userInfo && userInfo.id) {
         usersData.userData.users.push(userInfo);
         return true;
       }
       return false;
     },
-    updateUser: ({ userInfo, userId }: { userInfo: User; userId: number }) => {
+    updateUser: (
+      _: any,
+      { userInfo, userId }: { userInfo: User; userId: number }
+    ) => {
       if (userId) {
         usersData.userData.users = usersData.userData.users.map((user) =>
           user.id === userId ? userInfo : user
         );
       }
     },
-    deleteUser: ({ id }: { id: number }) => {
+    deleteUser: (_: any, { id }: { id: number }) => {
       console.log("id for delete", id);
       if (id) {
         usersData.userData.users = usersData.userData.users.filter(
