@@ -17,6 +17,17 @@ interface User {
   roles: string[];
 }
 
+interface UserObj {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  title: string;
+  isConfigAdmin: boolean;
+  enabled: boolean;
+  roles: string[];
+}
+
 interface UserData {
   totalUsers: number;
   users: User[];
