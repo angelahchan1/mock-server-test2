@@ -31,7 +31,20 @@ const usersData: Users = users;
 
 const resolvers = {
   Query: {
-    getUsers: () => usersData.userData,
+    getUsers: ({
+      startUserNum,
+      endUserNum,
+    }: {
+      startUserNum: number;
+      endUserNum: number;
+    }) => {
+      const usersInRange = usersData.userData.users.filter(
+        (user: User) => user.id >= startUserNum && user.id < endUserNum
+      );
+      const userDataInRange = { ...usersData };
+      userDataInRange.userData.users = usersInRange;
+      return userDataInRange;
+    },
     getUser: ({ userId }: { userId: number }) => {
       const userInfo = usersData.userData.users.find(
         (user) => user.id === userId
