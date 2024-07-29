@@ -31,13 +31,16 @@ const usersData: Users = users;
 
 const resolvers = {
   Query: {
-    getUsers: ({
-      startUserNum,
-      endUserNum,
-    }: {
-      startUserNum: number;
-      endUserNum: number;
-    }) => {
+    getUsers: (
+      _: any,
+      {
+        startUserNum,
+        endUserNum,
+      }: {
+        startUserNum: number;
+        endUserNum: number;
+      }
+    ) => {
       if (typeof startUserNum !== "number" || typeof endUserNum !== "number") {
         throw new Error("Invalid arguments");
       }
