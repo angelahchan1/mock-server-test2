@@ -20,6 +20,7 @@ export const typeDefs = gql`
     firstName: String
     lastName: String
     email: String
+    title: String
     isConfigAdmin: Boolean
     enabled: Boolean
     roles: [String]
