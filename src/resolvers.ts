@@ -64,6 +64,15 @@ const resolvers = {
   Mutation: {
     addUser: (_: any, { userInfo }: { userInfo: User }) => {
       if (userInfo && userInfo.id) {
+        const userExists = usersData.userData.users.some(
+          (user) => user.id === userInfo.id
+        );
+
+        if (userExists) {
+          console.log("User already exists with id:", userInfo.id);
+          return false;
+        }
+
         usersData.userData.users.push(userInfo);
         return true;
       }
