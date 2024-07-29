@@ -73,7 +73,7 @@ const resolvers = {
     getRoles: () => usersData.roles,
   },
   Mutation: {
-    addUser: (_: any, { userInfo }: { userInfo: User }) => {
+    addUser: (_: any, { userInfo }: { userInfo: UserObj }) => {
       if (userInfo && userInfo.id) {
         const userExists = usersData.userData.users.some(
           (user) => user.id === userInfo.id
