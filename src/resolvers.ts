@@ -38,6 +38,9 @@ const resolvers = {
       startUserNum: number;
       endUserNum: number;
     }) => {
+      if (typeof startUserNum !== "number" || typeof endUserNum !== "number") {
+        throw new Error("Invalid arguments");
+      }
       const usersInRange = usersData.userData.users.filter(
         (user: User) => user.id >= startUserNum && user.id < endUserNum
       );
