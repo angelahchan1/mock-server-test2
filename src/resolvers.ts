@@ -48,11 +48,8 @@ const resolvers = {
         (user: User) => user.id >= startUserNum && user.id < endUserNum
       );
       return {
-        ...usersData,
-        userData: {
-          ...usersData.userData,
-          users: usersInRange,
-        },
+        totalUsers: usersData.userData.totalUsers,
+        users: usersInRange,
       };
     },
     getUser: (_: any, { userId }: { userId: number }) => {
