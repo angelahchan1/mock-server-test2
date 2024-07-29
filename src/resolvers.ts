@@ -73,7 +73,10 @@ const resolvers = {
     getRoles: () => usersData.roles,
   },
   Mutation: {
+    /*
     addUser: (_: any, { userInfo }: { userInfo: UserObj }) => {
+      console.log("hello");
+      console.log(userInfo);
       if (userInfo && userInfo.id) {
         const userExists = usersData.userData.users.some(
           (user) => user.id === userInfo.id
@@ -89,13 +92,20 @@ const resolvers = {
       }
       return false;
     },
-    updateUser: (
-      _: any,
-      { userInfo, userId }: { userInfo: User; userId: number }
-    ) => {
+    */
+    addUser: (_: any, { user }: { user: UserObj }) => {
+      console.log("hello");
+      console.log(user);
+      if (user && user.id) {
+        usersData.userData.users.push(user);
+        return true;
+      }
+      return false;
+    },
+    updateUser: (_: any, { user, userId }: { user: User; userId: number }) => {
       if (userId) {
         usersData.userData.users = usersData.userData.users.map((user) =>
-          user.id === userId ? userInfo : user
+          user.id === userId ? user : user
         );
       }
     },

@@ -6,7 +6,7 @@ export const typeDefs = gql`
     name: String
     permissions: [String]
   }
-  type User {
+  type user {
     id: Int!
     firstName: String
     lastName: String
@@ -15,7 +15,7 @@ export const typeDefs = gql`
     enabled: Boolean
     roles: [String]
   }
-  input UserObj {
+  input userObj {
     id: Int!
     firstName: String
     lastName: String
@@ -25,20 +25,20 @@ export const typeDefs = gql`
     enabled: Boolean
     roles: [String]
   }
-  type UserData {
-    totalUsers: Int!
-    users: [User]
+  type userData {
+    totalusers: Int!
+    users: [user]
   }
   # the schema allows the following query:
   type Query {
-    getUsers(startUserNum: Int!, endUserNum: Int!): UserData
-    getUser(userId: Int!): User
+    getusers(startuserNum: Int!, enduserNum: Int!): userData
+    getuser(userId: Int!): user
     getRoles: [Roles]
   }
   type Mutation {
-    addUser(user: UserObj): Boolean
-    updateUser(id: Int!, user: UserObj): Boolean
-    deleteUser(id: Int!): Boolean
+    adduser(user: userObj!): Boolean
+    updateuser(id: Int!, user: userObj): Boolean
+    deleteuser(id: Int!): Boolean
   }
 `;
 export default typeDefs;
