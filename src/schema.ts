@@ -31,14 +31,14 @@ export const typeDefs = gql`
   }
   # the schema allows the following query:
   type Query {
-    getusers(startuserNum: Int!, enduserNum: Int!): userData
-    getuser(userId: Int!): user
+    getUsers(startuserNum: Int!, enduserNum: Int!): userData
+    getUser(userId: Int!): user
     getRoles: [Roles]
   }
   type Mutation {
-    adduser(user: userObj!): Boolean
-    updateuser(id: Int!, user: userObj): Boolean
-    deleteuser(id: Int!): Boolean
+    addUser(user: userObj!): Boolean
+    updateUser(id: Int!, user: userObj): Boolean
+    deleteUser(id: Int!): Boolean
   }
 `;
 export default typeDefs;
