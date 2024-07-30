@@ -6,6 +6,10 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
+  cors: {
+    origin: "*",
+    credentials: true,
+  },
 });
 
 server.listen().then(({ url }) => {
