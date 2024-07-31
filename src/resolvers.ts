@@ -98,6 +98,7 @@ const resolvers = {
       console.log(user);
       if (user && user.id) {
         usersData.userData.users.push(user);
+        usersData.userData.totalUsers = usersData.userData.totalUsers + 1; // update total count
         return true;
       }
       return false;
@@ -115,6 +116,7 @@ const resolvers = {
         usersData.userData.users = usersData.userData.users.filter(
           (user) => user.id !== id
         );
+        usersData.userData.totalUsers = usersData.userData.totalUsers - 1; // update total count
         return true;
       }
       return false;
