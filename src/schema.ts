@@ -31,7 +31,7 @@ export const typeDefs = gql`
   }
   # the schema allows the following query:
   type Query {
-    getUsers(startuserNum: Int!, enduserNum: Int!): userData
+    getUsers(startUserNum: Int!, endUserNum: Int!): userData
     getUser(userId: Int!): user
     getRoles: [Roles]
   }
