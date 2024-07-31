@@ -26,7 +26,7 @@ export const typeDefs = gql`
     roles: [String]
   }
   type userData {
-    totalusers: Int!
+    totalUsers: Int!
     users: [user]
   }
   # the schema allows the following query:
