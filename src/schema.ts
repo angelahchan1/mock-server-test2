@@ -4,6 +4,7 @@ export const typeDefs = gql`
   type Roles {
     id: Int!
     name: String
+    permissions: [String]
   }
   type user {
     id: Int!
