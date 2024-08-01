@@ -2,17 +2,22 @@
   "roles": [
     {
       "id": 1,
-      "name": "role1",
-      "permissions": ["admin"]
+      "name": "Control Centre - Read Only",
+      "permissions": ["manager"]
     },
     {
       "id": 2,
-      "name": "role2",
+      "name": "Data Insights - Read Only",
+      "permissions": ["manager"]
+    },
+    {
+      "id": 3,
+      "name": "Administration - Admin",
       "permissions": ["manager"]
     }
   ],
   "userData": {
-    "totalUsers": 40,
+    "totalUsers": 60,
     "users": [
       {
         "id": 1,
@@ -410,6 +415,206 @@
         "lastName": "User",
         "title": "a title",
         "email": "email40@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 41,
+        "firstName": "Forty-First",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email41@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 42,
+        "firstName": "Forty-Second",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email42@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 43,
+        "firstName": "Forty-Third",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email43@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 44,
+        "firstName": "Forty-Fourth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email44@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 45,
+        "firstName": "Forty-Fifth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email45@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 46,
+        "firstName": "Forty-Sixth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email46@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 47,
+        "firstName": "Forty-Seventh",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email47@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 48,
+        "firstName": "Forty-Eighth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email48@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 49,
+        "firstName": "Forty-Ninth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email49@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 50,
+        "firstName": "Fiftieth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email50@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 51,
+        "firstName": "Fifty-First",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email51@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 52,
+        "firstName": "Fifty-Second",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email52@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 53,
+        "firstName": "Fifty-Third",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email53@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 54,
+        "firstName": "Fifty-Fourth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email54@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 55,
+        "firstName": "Fifty-Fifth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email55@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 56,
+        "firstName": "Fifty-Sixth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email56@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 57,
+        "firstName": "Fifty-Seventh",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email57@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 58,
+        "firstName": "Fifty-Eighth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email58@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["2"]
+      },
+      {
+        "id": 59,
+        "firstName": "Fifty-Ninth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email59@ascasc.com",
+        "enabled": true,
+        "isConfigAdmin": false,
+        "roles": ["1"]
+      },
+      {
+        "id": 60,
+        "firstName": "Sixtieth",
+        "lastName": "User",
+        "title": "a title",
+        "email": "email60@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
