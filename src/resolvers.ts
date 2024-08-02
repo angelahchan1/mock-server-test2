@@ -55,8 +55,9 @@ const resolvers = {
       if (typeof startUserNum !== "number" || typeof endUserNum !== "number") {
         throw new Error("Invalid arguments");
       }
-      const usersInRange = usersData.userData.users.filter(
-        (user: User) => user.id >= startUserNum && user.id <= endUserNum
+      const usersInRange = usersData.userData.users.slice(
+        startUserNum - 1,
+        endUserNum - 1
       );
       return {
         totalUsers: usersData.userData.totalUsers,
