@@ -57,7 +57,7 @@ const resolvers = {
       }
       const usersInRange = usersData.userData.users.slice(
         startUserNum - 1,
-        endUserNum - 1
+        endUserNum
       );
       return {
         totalUsers: usersData.userData.totalUsers,
