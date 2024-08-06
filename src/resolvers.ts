@@ -11,7 +11,6 @@ interface User {
   firstName: string;
   lastName: string;
   email: string;
-  title: string;
   isConfigAdmin: boolean;
   enabled: boolean;
   roles: string[];
@@ -22,7 +21,6 @@ interface UserObj {
   firstName: string;
   lastName: string;
   email: string;
-  title: string;
   isConfigAdmin: boolean;
   enabled: boolean;
   roles: string[];
