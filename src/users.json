@@ -25,6 +25,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email1@ascasc.com",
+        "username": "email1@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -35,6 +36,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email2@ascasc.com",
+        "username": "email2@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -45,6 +47,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email3@ascasc.com",
+        "username": "email3@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -55,6 +58,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email4@ascasc.com",
+        "username": "email4@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -65,6 +69,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email5@ascasc.com",
+        "username": "email5@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -75,6 +80,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email6@ascasc.com",
+        "username": "email6@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -85,6 +91,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email7@ascasc.com",
+        "username": "email7@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -95,6 +102,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email8@ascasc.com",
+        "username": "email8@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -105,6 +113,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email9@ascasc.com",
+        "username": "email9@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -115,6 +124,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email10@ascasc.com",
+        "username": "email10@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -125,6 +135,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email11@ascasc.com",
+        "username": "email11@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -135,6 +146,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email12@ascasc.com",
+        "username": "email12@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -145,6 +157,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email13@ascasc.com",
+        "username": "email13@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -155,6 +168,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email14@ascasc.com",
+        "username": "email14@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -165,6 +179,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email15@ascasc.com",
+        "username": "email15@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -175,6 +190,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email16@ascasc.com",
+        "username": "email16@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -185,6 +201,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email17@ascasc.com",
+        "username": "email17@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -195,6 +212,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email18@ascasc.com",
+        "username": "email18@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -205,6 +223,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email19@ascasc.com",
+        "username": "email19@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -215,6 +234,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email20@ascasc.com",
+        "username": "email20@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -225,6 +245,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email21@ascasc.com",
+        "username": "email21@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -235,6 +256,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email22@ascasc.com",
+        "username": "email22@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -245,6 +267,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email23@ascasc.com",
+        "username": "email23@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -255,6 +278,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email24@ascasc.com",
+        "username": "email24@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -265,6 +289,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email25@ascasc.com",
+        "username": "email25@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -275,6 +300,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email26@ascasc.com",
+        "username": "email26@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -285,6 +311,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email27@ascasc.com",
+        "username": "email27@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -295,6 +322,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email28@ascasc.com",
+        "username": "email28@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -305,6 +333,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email29@ascasc.com",
+        "username": "email29@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -315,6 +344,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email30@ascasc.com",
+        "username": "email30@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -325,6 +355,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email31@ascasc.com",
+        "username": "email31@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -335,6 +366,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email32@ascasc.com",
+        "username": "email32@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -345,6 +377,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email33@ascasc.com",
+        "username": "email33@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -355,6 +388,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email34@ascasc.com",
+        "username": "email34@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -365,6 +399,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email35@ascasc.com",
+        "username": "email35@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -375,6 +410,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email36@ascasc.com",
+        "username": "email36@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -385,6 +421,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email37@ascasc.com",
+        "username": "email37@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -395,6 +432,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email38@ascasc.com",
+        "username": "email38@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -405,6 +443,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email39@ascasc.com",
+        "username": "email39@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -415,6 +454,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email40@ascasc.com",
+        "username": "email40@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -425,6 +465,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email41@ascasc.com",
+        "username": "email41@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -435,6 +476,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email42@ascasc.com",
+        "username": "email42@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -445,6 +487,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email43@ascasc.com",
+        "username": "email43@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -455,6 +498,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email44@ascasc.com",
+        "username": "email44@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -465,6 +509,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email45@ascasc.com",
+        "username": "email45@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -475,6 +520,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email46@ascasc.com",
+        "username": "email46@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -485,6 +531,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email47@ascasc.com",
+        "username": "email47@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -495,6 +542,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email48@ascasc.com",
+        "username": "email48@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -505,6 +553,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email49@ascasc.com",
+        "username": "email49@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -515,6 +564,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email50@ascasc.com",
+        "username": "email50@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -525,6 +575,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email51@ascasc.com",
+        "username": "email51@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -535,6 +586,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email52@ascasc.com",
+        "username": "email52@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -545,6 +597,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email53@ascasc.com",
+        "username": "email53@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -555,6 +608,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email54@ascasc.com",
+        "username": "email54@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -565,6 +619,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email55@ascasc.com",
+        "username": "email55@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -575,6 +630,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email56@ascasc.com",
+        "username": "email56@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -585,6 +641,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email57@ascasc.com",
+        "username": "email57@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -595,6 +652,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email58@ascasc.com",
+        "username": "email58@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]
@@ -605,6 +663,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email59@ascasc.com",
+        "username": "email59@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
@@ -615,6 +674,7 @@
         "lastName": "User",
         "title": "a title",
         "email": "email60@ascasc.com",
+        "username": "email60@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["2"]

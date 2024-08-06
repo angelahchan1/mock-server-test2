@@ -10,6 +10,7 @@ export const typeDefs = gql`
     id: Int!
     firstName: String
     lastName: String
+    userName: String
     email: String
     isConfigAdmin: Boolean
     enabled: Boolean
