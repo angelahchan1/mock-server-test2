@@ -26,13 +26,13 @@ interface UserObj {
   roles: string[];
 }
 
-interface UserData {
+interface UserAndRoles {
   totalUsers: number;
   users: User[];
 }
 
 interface Users {
-  userData: UserData;
+  users: UserAndRoles;
   roles: Role[]; // Adjust to match the structure if needed
 }
 
@@ -40,32 +40,27 @@ const usersData: Users = users;
 
 const resolvers = {
   Query: {
-    getUsers: (
+    fetchAllUsers: (
       _: any,
       {
-        startUserNum,
-        endUserNum,
+        begin,
+        end,
       }: {
-        startUserNum: number;
-        endUserNum: number;
+        begin: number;
+        end: number;
       }
     ) => {
-      if (typeof startUserNum !== "number" || typeof endUserNum !== "number") {
+      if (typeof begin !== "number" || typeof end !== "number") {
         throw new Error("Invalid arguments");
       }
-      const usersInRange = usersData.userData.users.slice(
-        startUserNum - 1,
-        endUserNum
-      );
+      const usersInRange = usersData.users.users.slice(begin - 1, end);
       return {
-        totalUsers: usersData.userData.totalUsers,
+        totalUsers: usersData.users.totalUsers,
         users: usersInRange,
       };
     },
     getUser: (_: any, { userId }: { userId: number }) => {
-      const userInfo = usersData.userData.users.find(
-        (user) => user.id === userId
-      );
+      const userInfo = usersData.users.users.find((user) => user.id === userId);
       console.log(userId);
       return userInfo;
     },
@@ -77,7 +72,7 @@ const resolvers = {
       console.log("hello");
       console.log(userInfo);
       if (userInfo && userInfo.id) {
-        const userExists = usersData.userData.users.some(
+        const userExists = usersData.users.users.some(
           (user) => user.id === userInfo.id
         );
 
@@ -86,25 +81,25 @@ const resolvers = {
           return false;
         }
 
-        usersData.userData.users.push(userInfo);
+        usersData.users.users.push(userInfo);
         return true;
       }
       return false;
     },
     */
-    addUser: (_: any, { user }: { user: UserObj }) => {
+    createUser: (_: any, { user }: { user: UserObj }) => {
       console.log("hello");
       console.log(user);
       if (user && user.id) {
-        usersData.userData.users.push(user);
-        usersData.userData.totalUsers = usersData.userData.totalUsers + 1; // update total count
+        usersData.users.users.push(user);
+        usersData.users.totalUsers = usersData.users.totalUsers + 1; // update total count
         return true;
       }
       return false;
     },
     updateUser: (_: any, { user, userId }: { user: User; userId: number }) => {
       if (userId) {
-        usersData.userData.users = usersData.userData.users.map((user) =>
+        usersData.users.users = usersData.users.users.map((user) =>
           user.id === userId ? user : user
         );
       }
@@ -112,10 +107,10 @@ const resolvers = {
     deleteUser: (_: any, { id }: { id: number }) => {
       console.log("id for delete", id);
       if (id) {
-        usersData.userData.users = usersData.userData.users.filter(
+        usersData.users.users = usersData.users.users.filter(
           (user) => user.id !== id
         );
-        usersData.userData.totalUsers = usersData.userData.totalUsers - 1; // update total count
+        usersData.users.totalUsers = usersData.users.totalUsers - 1; // update total count
         return true;
       }
       return false;

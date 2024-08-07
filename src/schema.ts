@@ -6,11 +6,11 @@ export const typeDefs = gql`
     name: String
     permissions: [String]
   }
-  type user {
+  type User {
     id: Int!
     firstName: String
     lastName: String
-    userName: String
+    username: String
     email: String
     isConfigAdmin: Boolean
     enabled: Boolean
@@ -21,24 +21,48 @@ export const typeDefs = gql`
     firstName: String
     lastName: String
     email: String
-    userName: String
+    username: String
     isConfigAdmin: Boolean
     enabled: Boolean
     roles: [String]
   }
-  type userData {
+  input UserRequestInput {
+    username: String!
+    firstName: String!
+    lastName: String!
+    email: String!
+    enabled: Boolean!
+  }
+  type Error {
+    code: Int!
+    message: String!
+  }
+  enum RequestType {
+    ADD_USER
+    UPDATE_USER
+    ADD_ROLES
+    REMOVE_ROLES
+    DELETE_USER
+  }
+  type ChangeRequestResult {
+    error: Error
+    success: Boolean!
+    requestType: RequestType
+  }
+
+  type UserAndRoles {
     totalUsers: Int!
-    users: [user]
+    users: [User]
   }
   # the schema allows the following query:
   type Query {
-    getUsers(startUserNum: Int!, endUserNum: Int!): userData
-    getUser(userId: Int!): user
+    fetchAllUsers(begin: Int!, end: Int!): UserAndRoles
+    getUser(userId: Int!): User
     getRoles: [Roles]
   }
   type Mutation {
-    addUser(user: userObj!): Boolean
-    updateUser(id: Int!, user: userObj): Boolean
+    createUser(User: userObj!): Boolean
+    updateUser(id: Int!, User: userObj): Boolean
     deleteUser(id: Int!): Boolean
   }
 `;
