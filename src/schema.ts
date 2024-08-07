@@ -2,12 +2,12 @@ import { gql } from "apollo-server";
 
 export const typeDefs = gql`
   type Roles {
-    id: Int!
+    id: String!
     name: String
     permissions: [String]
   }
   type User {
-    id: Int!
+    id: String!
     firstName: String
     lastName: String
     username: String
@@ -16,8 +16,8 @@ export const typeDefs = gql`
     enabled: Boolean
     roles: [String]
   }
-  input userObj {
-    id: Int!
+  input UserRequestInput {
+    id: String!
     firstName: String
     lastName: String
     email: String
@@ -49,7 +49,6 @@ export const typeDefs = gql`
     success: Boolean!
     requestType: RequestType
   }
-
   type UserAndRoles {
     totalUsers: Int!
     users: [User]
@@ -61,9 +60,9 @@ export const typeDefs = gql`
     getRoles: [Roles]
   }
   type Mutation {
-    createUser(User: userObj!): Boolean
-    updateUser(id: Int!, User: userObj): Boolean
-    deleteUser(id: Int!): Boolean
+    createUser(User: UserRequestInput!): Boolean
+    updateUser(id: String!, User: UserRequestInput): Boolean
+    deleteUser(id: String!): Boolean
   }
 `;
 export default typeDefs;
