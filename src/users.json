@@ -24,15 +24,15 @@
         "firstName": "FirstLongUsernameNoLastName",
         "lastName": "",
         "title": "a title",
-        "email": "email1jijijiijijijijijijijijijijijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj@ascasc.com",
-        "username": "email1mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm@ascasc.com",
+        "email": "email1j@ascasc.com",
+        "username": "email1m@ascasc.com",
         "enabled": true,
         "isConfigAdmin": false,
         "roles": ["1"]
       },
       {
         "id": 2,
-        "firstName": "SecondLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONGNAME",
+        "firstName": "Second",
         "lastName": "User",
         "title": "a title",
         "email": "email2@ascasc.com",
