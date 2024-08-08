@@ -80,6 +80,13 @@ const resolvers = {
       }
     ) => {
       const lowerInput = input.toLowerCase();
+      console.log(lowerInput);
+      if (input === "") {
+        return {
+          totalUsers: usersData.users.totalUsers,
+          users: usersData.users.users.slice(begin - 1, end),
+        };
+      }
       const allMatchedUsers = usersData.users.users.filter(
         (user) =>
           user.firstName.toLowerCase().startsWith(lowerInput) ||
