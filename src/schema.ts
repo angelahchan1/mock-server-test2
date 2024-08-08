@@ -58,6 +58,7 @@ export const typeDefs = gql`
     fetchAllUsers(begin: Int!, end: Int!): UserAndRoles
     getUser(userId: Int!): User
     getRoles: [Roles]
+    searchUser(input: String, begin: Int, end: Int): UserAndRoles
   }
   type Mutation {
     createUser(User: UserRequestInput!): Boolean

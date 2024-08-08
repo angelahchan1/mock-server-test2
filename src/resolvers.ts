@@ -10,6 +10,7 @@ interface User {
   id: number;
   firstName: string;
   lastName: string;
+  username: string;
   email: string;
   isConfigAdmin: boolean;
   enabled: boolean;
@@ -21,6 +22,7 @@ interface UserObj {
   firstName: string;
   lastName: string;
   email: string;
+  username: string;
   isConfigAdmin: boolean;
   enabled: boolean;
   roles: string[];
@@ -65,6 +67,31 @@ const resolvers = {
       return userInfo;
     },
     getRoles: () => usersData.roles,
+    searchUser: (
+      _: any,
+      {
+        input,
+        begin,
+        end,
+      }: {
+        input: string;
+        begin: number;
+        end: number;
+      }
+    ) => {
+      const lowerInput = input.toLowerCase();
+      const allMatchedUsers = usersData.users.users.filter(
+        (user) =>
+          user.firstName.toLowerCase().startsWith(lowerInput) ||
+          user.lastName.toLowerCase().startsWith(lowerInput) ||
+          user.username.toLowerCase().startsWith(lowerInput) ||
+          user.email.toLowerCase().startsWith(lowerInput)
+      );
+      return {
+        users: allMatchedUsers.slice(begin - 1, end),
+        totalUsers: allMatchedUsers.length,
+      };
+    },
   },
   Mutation: {
     /*
