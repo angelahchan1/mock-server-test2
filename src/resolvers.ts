@@ -92,6 +92,9 @@ const resolvers = {
           user.firstName.toLowerCase().startsWith(lowerInput) ||
           user.lastName.toLowerCase().startsWith(lowerInput) ||
           user.username.toLowerCase().startsWith(lowerInput) ||
+          `${user.firstName.toLowerCase()} ${user.lastName.toLowerCase()}`.startsWith(
+            lowerInput
+          ) ||
           user.email.toLowerCase().startsWith(lowerInput)
       );
       return {
